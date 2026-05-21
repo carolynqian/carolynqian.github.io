@@ -1,3 +1,6 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// Hide the page title on the homepage — the site title already shows above the Explorer
+body[data-slug="index"] .article-title {
+  display: none;
+}
