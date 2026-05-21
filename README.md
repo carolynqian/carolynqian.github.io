@@ -1,17 +1,20 @@
-# Quartz v4
+# carolynqian.github.io
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+Personal site built with [Quartz 4](https://quartz.jzhao.xyz/) — live at <https://carolynqian.github.io>.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+## How it works
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+- **Content lives in the Obsidian vault, not here** — in the vault's `Published/` folder.
+- `publish.sh` copies `Published/` → `content/`, commits, and pushes.
+- The GitHub Action in `.github/workflows/deploy.yml` builds the site and deploys it to GitHub Pages on every push to `main`.
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+## Commands
 
-## Sponsors
+- `./preview.sh` — live local preview at <http://localhost:8080> (reads the vault directly, publishes nothing)
+- `./publish.sh` — publish: sync content from the vault, commit, push, deploy
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+## Notes
+
+- To keep a note in `Published/` as a private draft, add `draft: true` to its frontmatter.
+- Attachments for published notes go in `Published/attachments/`.
+- To update Quartz itself: `git fetch upstream && git merge upstream/v4`.
