@@ -1,5 +1,9 @@
 ---
 title: Made with Care
+up:
+tags:
+description: hompage
+date: 2026-05-21
+draft: false
 ---
-
-Welcome. This is the home page — edit `Published/index.md` in your vault to change it.
+Hi! I'm Care. This is empty right now but I'll hopefully add some stuff soon! 
