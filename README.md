@@ -15,6 +15,6 @@ Personal site built with [Quartz 4](https://quartz.jzhao.xyz/) — live at <http
 
 ## Notes
 
-- To keep a note in `Published/` as a private draft, add `draft: true` to its frontmatter.
+- A note appears on the site only with `publish: true` in its frontmatter (the `ExplicitPublish` filter).
 - Attachments for published notes go in `Published/attachments/`.
 - To update Quartz itself: `git fetch upstream && git merge upstream/v4`.
